@@ -1,0 +1,109 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+.invader-header {
+    background-color: #3148AD;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.invader-board {
+    background-color: #6158CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+.invader-tools {
+    height: 15%;
+    background-color: black;
+    color: white;
+}
+.configuration {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.grid {
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1.1em;
+    padding: 0.5em;
+    border-radius: 0.5em 0 0 0.5em;
+    width: 12em;
+}
+.pixel-size {
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1.1em;
+    padding: 0.5em;
+    width: 11em;
+}
+#palette {
+    background-color: rgba(0, 0, 0, .54);
+    border-radius: 8px;
+    padding: 4px 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .34);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+.style-selector {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, .54);
+    margin: 0 8px;
+    cursor: pointer;
+}
+#custom-selector {
+    background: none;
+    border: none;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 50%;
+}
+[data-style-name="plain"] {
+    background-color: rgba(0, 0, 0, .82);
+}
+[data-style-name="empty"] {
+    background-color: #c5c5c5;
+}
+[data-style-name="light"] {
+    background-color: #fff;
+}
+[data-style-name="highlight"] {
+    background-color: #0ac3a7;
+}
+.button {
+    border: 1px solid rgb(56, 56, 56);
+    font-size: 1.1em;
+    padding: 0.5em;
+    border-radius: 0 0.5em 0.5em 0;
+    background-color: #9B68E4;
+    color: white;
+    cursor: pointer;
+}
+.pixel-container {
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+}
+.pixel {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, .54);
+}
